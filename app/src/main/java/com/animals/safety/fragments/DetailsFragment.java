@@ -32,13 +32,12 @@ public class DetailsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        /*
         binding.imageViewAvatar.setImageDrawable(AppCompatResources.getDrawable(getContext(), getAnimal().getBreed().getCover()));
         binding.textViewName.setText(getAnimal().getName());
         binding.textViewAge.setText(getString(R.string.value_age, String.valueOf(getAnimal().getAge())));
         binding.textViewWeight.setText(getString(R.string.value_weight, String.valueOf(getAnimal().getWeight())));
         binding.textViewHeight.setText(getString(R.string.value_height, String.valueOf(getAnimal().getHeight())));
-        */
+
     }
 
     @Override

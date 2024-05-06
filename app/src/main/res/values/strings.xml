@@ -26,7 +26,7 @@
     <string name="value_age">%1$s years old</string>
     <string name="value_weight">%1$s (Kg)</string>
     <string name="value_height">%1$s (cm)</string>
+
     <string name="avatar">Avatar</string>
-    <string name="name">Name</string>
     <string name="informations">Informations</string>
 </resources>

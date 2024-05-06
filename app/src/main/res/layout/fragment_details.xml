@@ -1,15 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+    >
 
-        <!-- TODO: A compléter -->
+        <ImageView
+            android:id="@+id/imageView_avatar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/hint_breed"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_dog"
+            app:layout_constraintHeight_min="300dp"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="1" />
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_name"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toStartOf="@id/imageView_avatar"
+            app:layout_constraintBottom_toBottomOf="@id/imageView_avatar"
+           />
+
+        <ImageView
+            android:id="@+id/pictoAge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="60dp"
+            android:src="@drawable/ic_age"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/textViewAge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/hint_age"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/pictoAge"
+            app:layout_constraintTop_toBottomOf="@+id/pictoAge"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/pictoPoids"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_weight"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_avatar"
+
+            />
+
+        <TextView
+            android:id="@+id/textViewWeight"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:text="@string/hint_weight"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/pictoPoids"
+            app:layout_constraintTop_toBottomOf="@+id/pictoPoids"
+            android:gravity="center"
+             />
+
+
+        <ImageView
+            android:id="@+id/pictoTaille"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/ic_height"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/textViewHeight"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/hint_height"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/pictoTaille"
+            app:layout_constraintTop_toBottomOf="@+id/pictoTaille"
+            android:gravity="center"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.core.widget.NestedScrollView>
