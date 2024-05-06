@@ -32,7 +32,6 @@ public class CreateFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        /*
         binding.numberpickerBreed.setMinValue(1);
         binding.numberpickerBreed.setMaxValue(getBreeds().size());
         binding.numberpickerBreed.setValue(1);
@@ -46,7 +45,7 @@ public class CreateFragment extends Fragment {
                     NavHostFragment.findNavController(CreateFragment.this).navigateUp();
             }
         });
-        */
+
     }
 
     private List<String> getBreeds() {
@@ -57,7 +56,7 @@ public class CreateFragment extends Fragment {
         return result;
     }
 
-    /*
+
     private boolean verifyAndCreateAnimal() {
         String name = binding.fieldName.getText().toString();
         if (name.isBlank()) {
@@ -117,7 +116,7 @@ public class CreateFragment extends Fragment {
 
         return true;
     }
-    */
+
 
     @Override
     public void onDestroyView() {

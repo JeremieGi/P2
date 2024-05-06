@@ -25,12 +25,18 @@ public class AnimalCardAdapter extends RefreshableAdapter<AnimalCardAdapter.Anim
         refresh(data);
     }
 
+    /**
+     * Create new views (invoked by the layout manager)
+     */
     @NonNull
     @Override
     public AnimalViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new AnimalViewHolder(ItemAnimalBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
     }
 
+    /**
+     * Replace the contents of a view (invoked by the layout manager)
+     */
     @Override
     public void onBindViewHolder(@NonNull AnimalViewHolder holder, int position) {
         Animal animal = data.get(position);
@@ -42,7 +48,7 @@ public class AnimalCardAdapter extends RefreshableAdapter<AnimalCardAdapter.Anim
             }
         });
 
-        /*
+
         DecimalFormat df = new DecimalFormat();
         df.setMaximumFractionDigits(2);
 
@@ -58,14 +64,18 @@ public class AnimalCardAdapter extends RefreshableAdapter<AnimalCardAdapter.Anim
                         df.format(animal.getWeight()),
                         df.format(animal.getHeight())
                 ));
-        */
+
     }
 
+    /**
+     * Return the size of your dataset (invoked by the layout manager)
+     */
     @Override
     public int getItemCount() {
         return data.size();
     }
 
+    // Contrairement aux classes internes non statiques, les classes statiques ne peuvent pas accéder aux membres non statiques de la classe externe.
     static class AnimalViewHolder extends RecyclerView.ViewHolder {
 
         ItemAnimalBinding binding;
@@ -73,6 +83,7 @@ public class AnimalCardAdapter extends RefreshableAdapter<AnimalCardAdapter.Anim
         public AnimalViewHolder(ItemAnimalBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
+
         }
     }
 }
