@@ -19,7 +19,6 @@
             android:scaleType="centerCrop"
             android:src="@drawable/img_dog"
             app:layout_constraintHeight_min="300dp"
-            app:layout_constraintHeight_percent="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_percent="1" />
@@ -45,6 +44,7 @@
             android:src="@drawable/ic_age"
             app:layout_constraintTop_toBottomOf="@+id/imageView_avatar"
             app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/hint_age"
             />
 
         <TextView
@@ -67,7 +67,7 @@
             android:layout_marginEnd="60dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView_avatar"
-
+            android:contentDescription="@string/hint_height"
             />
 
         <TextView
@@ -92,6 +92,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView_avatar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/hint_weight"
             />
 
         <TextView

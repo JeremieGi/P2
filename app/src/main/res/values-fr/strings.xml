@@ -29,4 +29,5 @@
 
     <string name="avatar">Avatar</string>
     <string name="informations">Informations</string>
+    <string name="image_of_height">Picto de la taille</string>
 </resources>

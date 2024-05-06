@@ -19,13 +19,15 @@
                 android:layout_height="match_parent"
                 android:inputType="text"
                 android:hint="@string/hint_name"
+                android:layout_margin="@dimen/fab_margin"
                 />
 
             <NumberPicker
                 android:id="@+id/numberpickerBreed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/hint_breed"/>
+                android:hint="@string/hint_breed"
+                android:layout_margin="@dimen/fab_margin"/>
 
             <EditText
                 android:id="@+id/field_age"
@@ -33,6 +35,7 @@
                 android:layout_height="match_parent"
                 android:inputType="numberDecimal"
                 android:hint="@string/hint_age"
+                android:layout_margin="@dimen/fab_margin"
                 />
 
 
@@ -42,6 +45,7 @@
                 android:layout_height="match_parent"
                 android:inputType="numberDecimal"
                 android:hint="@string/hint_weight"
+                android:layout_margin="@dimen/fab_margin"
                 />
 
             <EditText
@@ -50,6 +54,7 @@
                 android:layout_height="match_parent"
                 android:inputType="numberDecimal"
                 android:hint="@string/hint_height"
+                android:layout_margin="@dimen/fab_margin"
                 />
 
         </LinearLayout>
